@@ -8,12 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		8ABF47041E8BCBF200AE3686 /* ManualJayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ABF47021E8BCBF200AE3686 /* ManualJayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ABF470B1E8BCF9800AE3686 /* ManualJayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABF470A1E8BCF9800AE3686 /* ManualJayout.swift */; };
+		8ABF47131E8BD09A00AE3686 /* ManualJayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABF47121E8BD09A00AE3686 /* ManualJayoutTests.swift */; };
+		8ABF47151E8BD09A00AE3686 /* ManualJayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ABF46FF1E8BCBF200AE3686 /* ManualJayout.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8ABF47161E8BD09A00AE3686 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8ABF46F61E8BCBF200AE3686 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8ABF46FE1E8BCBF200AE3686;
+			remoteInfo = ManualJayout;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8ABF46FF1E8BCBF200AE3686 /* ManualJayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ManualJayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ABF47021E8BCBF200AE3686 /* ManualJayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManualJayout.h; sourceTree = "<group>"; };
 		8ABF47031E8BCBF200AE3686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ABF470A1E8BCF9800AE3686 /* ManualJayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualJayout.swift; sourceTree = "<group>"; };
+		8ABF47101E8BD09A00AE3686 /* ManualJayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManualJayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ABF47121E8BD09A00AE3686 /* ManualJayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualJayoutTests.swift; sourceTree = "<group>"; };
+		8ABF47141E8BD09A00AE3686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +41,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8ABF470D1E8BD09A00AE3686 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ABF47151E8BD09A00AE3686 /* ManualJayout.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -31,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				8ABF47011E8BCBF200AE3686 /* ManualJayout */,
+				8ABF47111E8BD09A00AE3686 /* ManualJayoutTests */,
 				8ABF47001E8BCBF200AE3686 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				8ABF46FF1E8BCBF200AE3686 /* ManualJayout.framework */,
+				8ABF47101E8BD09A00AE3686 /* ManualJayoutTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,8 +75,18 @@
 			children = (
 				8ABF47021E8BCBF200AE3686 /* ManualJayout.h */,
 				8ABF47031E8BCBF200AE3686 /* Info.plist */,
+				8ABF470A1E8BCF9800AE3686 /* ManualJayout.swift */,
 			);
 			path = ManualJayout;
+			sourceTree = "<group>";
+		};
+		8ABF47111E8BD09A00AE3686 /* ManualJayoutTests */ = {
+			isa = PBXGroup;
+			children = (
+				8ABF47121E8BD09A00AE3686 /* ManualJayoutTests.swift */,
+				8ABF47141E8BD09A00AE3686 /* Info.plist */,
+			);
+			path = ManualJayoutTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,16 +121,40 @@
 			productReference = 8ABF46FF1E8BCBF200AE3686 /* ManualJayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		8ABF470F1E8BD09A00AE3686 /* ManualJayoutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ABF47181E8BD09A00AE3686 /* Build configuration list for PBXNativeTarget "ManualJayoutTests" */;
+			buildPhases = (
+				8ABF470C1E8BD09A00AE3686 /* Sources */,
+				8ABF470D1E8BD09A00AE3686 /* Frameworks */,
+				8ABF470E1E8BD09A00AE3686 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8ABF47171E8BD09A00AE3686 /* PBXTargetDependency */,
+			);
+			name = ManualJayoutTests;
+			productName = ManualJayoutTests;
+			productReference = 8ABF47101E8BD09A00AE3686 /* ManualJayoutTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		8ABF46F61E8BCBF200AE3686 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = MJ;
 				TargetAttributes = {
 					8ABF46FE1E8BCBF200AE3686 = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					8ABF470F1E8BD09A00AE3686 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -112,12 +173,20 @@
 			projectRoot = "";
 			targets = (
 				8ABF46FE1E8BCBF200AE3686 /* ManualJayout */,
+				8ABF470F1E8BD09A00AE3686 /* ManualJayoutTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8ABF46FD1E8BCBF200AE3686 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ABF470E1E8BD09A00AE3686 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -131,10 +200,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ABF470B1E8BCF9800AE3686 /* ManualJayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ABF470C1E8BD09A00AE3686 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ABF47131E8BD09A00AE3686 /* ManualJayoutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8ABF47171E8BD09A00AE3686 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8ABF46FE1E8BCBF200AE3686 /* ManualJayout */;
+			targetProxy = 8ABF47161E8BD09A00AE3686 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8ABF47051E8BCBF200AE3686 /* Debug */ = {
@@ -239,6 +325,27 @@
 		8ABF47081E8BCBF200AE3686 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ManualJayout/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MJ.ManualJayout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8ABF47091E8BCBF200AE3686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -252,22 +359,26 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
-			name = Debug;
+			name = Release;
 		};
-		8ABF47091E8BCBF200AE3686 /* Release */ = {
+		8ABF47191E8BD09A00AE3686 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ManualJayout/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INFOPLIST_FILE = ManualJayoutTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MJ.ManualJayout;
+				PRODUCT_BUNDLE_IDENTIFIER = MJ.ManualJayoutTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8ABF471A1E8BD09A00AE3686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ManualJayoutTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MJ.ManualJayoutTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -289,6 +400,14 @@
 			buildConfigurations = (
 				8ABF47081E8BCBF200AE3686 /* Debug */,
 				8ABF47091E8BCBF200AE3686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8ABF47181E8BD09A00AE3686 /* Build configuration list for PBXNativeTarget "ManualJayoutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ABF47191E8BD09A00AE3686 /* Debug */,
+				8ABF471A1E8BD09A00AE3686 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
